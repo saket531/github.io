@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demystifying Venture Capital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Demystifying Venture Capital</h1>
+                <p>Interactive Learning Platform for Venture Capital & Private Equity</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-section="home">Overview</button>
+                <button class="nav-tab" data-section="fundamentals">Fundamentals</button>
+                <button class="nav-tab" data-section="performance">Performance</button>
+                <button class="nav-tab" data-section="lifecycle">Lifecycle</button>
+                <button class="nav-tab" data-section="structure">Structure</button>
+                <button class="nav-tab" data-section="comparison">VC vs PE</button>
+                <button class="nav-tab" data-section="ecosystem">Global Ecosystem</button>
+                <button class="nav-tab" data-section="asset-allocation">Asset Allocation</button>
+                <button class="nav-tab" data-section="metrics">Metrics</button>
+                <button class="nav-tab" data-section="deals">Deal Process</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <!-- Home Section -->
+            <section id="home" class="content-section active">
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <h3>$337.4B</h3>
+                        <p>Global VC Market 2024</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>159,157</h3>
+                        <p>Startups in India</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>1,523</h3>
+                        <p>Global Unicorns</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>$5.6T</h3>
+                        <p>Total Unicorn Value</p>
+                    </div>
+                </div>
+
+                <div class="overview-grid">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Market Overview</h3>
+                            <p>The global venture capital market is projected to reach <strong>$1.46T by 2033</strong>, with private markets AUM at $14.3T. Learn about the fundamentals driving this growth.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Key Insights</h3>
+                            <ul>
+                                <li>PE 10-year IRR: 15.8% vs Public Markets: 6.2%</li>
+                                <li>AI investment in 2024: $131.5B</li>
+                                <li>Average VC holding period: 8 years</li>
+                                <li>2/20 fee structure standard</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fundamentals Section -->
+            <section id="fundamentals" class="content-section">
+                <h2>VC/PE Fundamentals</h2>
+                
+                <div class="fundamentals-grid">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>What is Venture Capital?</h3>
+                            <br>
+                            <p>Venture Capital (VC) is a form of financing provided by firms or funds to <strong>startup, early-stage, and emerging companies</strong> that have deemed to have high growth potential.</p>
+                            <div class="key-points">
+                                <h4>Key Characteristics:</h4>
+                                <ul>
+                                    <li>High uncertainty tolerance</li>
+                                    <li>"2 out of 10" mindset - expect most investments to fail</li>
+                                    <li>Focus on disruptive industries</li>
+                                    <li>Technology preference</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Portfolio Focus Areas</h3>
+                            <br>
+                            <div class="sector-tags">
+                                <span class="tag">Technology</span>
+                                <span class="tag">Biotech</span>
+                                <span class="tag">Software</span>
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">Fintech</span>
+                                <span class="tag">Healthcare</span>
+                            </div>
+                            <div class="sector-stats">
+                                <div class="stat-item">
+                                    <span class="stat-value">35%</span>
+                                    <span class="stat-label">Software Share</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-value">22%</span>
+                                    <span class="stat-label">Biotech Share</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Why Firms Need VC</h3>
+                            <br>
+                            <div class="reason-list">
+                                <div class="reason-item">
+                                    <strong>Information Asymmetry Reduction</strong>
+                                    <p>VCs bridge the gap between startups and traditional funding sources</p>
+                                </div>
+                                <div class="reason-item">
+                                    <strong>Risk Management</strong>
+                                    <p>Specialized expertise in high-uncertainty environments</p>
+                                </div>
+                                <div class="reason-item">
+                                    <strong>Value Addition</strong>
+                                    <p>Beyond capital: mentorship, networks, and strategic guidance</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Performance Section -->
+            <section id="performance" class="content-section">
+                <h2>Performance Comparison Dashboard</h2>
+                
+                <div class="performance-controls">
+                    <div class="time-selector">
+                        <button class="btn btn--sm time-btn active" data-period="5yr">5 Years</button>
+                        <button class="btn btn--sm time-btn" data-period="10yr">10 Years</button>
+                        <button class="btn btn--sm time-btn" data-period="h1-2024">H1 2024</button>
+                    </div>
+                </div>
+
+                <div class="chart-container" style="position: relative; height: 400px;">
+                    <canvas id="performanceChart"></canvas>
+                </div>
+
+                <div class="performance-summary">
+                    <div class="performance-card">
+                        <h4>Private Equity</h4>
+                        <div class="performance-data">
+                            <span class="performance-value">15.8%</span>
+                            <span class="performance-label">10-Year IRR</span>
+                        </div>
+                    </div>
+                    <div class="performance-card">
+                        <h4>Venture Capital</h4>
+                        <div class="performance-data">
+                            <span class="performance-value">30%</span>
+                            <span class="performance-label">Typical IRR</span>
+                        </div>
+                    </div>
+                    <div class="performance-card">
+                        <h4>Public Markets</h4>
+                        <div class="performance-data">
+                            <span class="performance-value">6.2%</span>
+                            <span class="performance-label">10-Year Return</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lifecycle Section -->
+            <section id="lifecycle" class="content-section">
+                <h2>Company Lifecycle</h2>
+                
+                <div class="lifecycle-flow">
+                    <div class="lifecycle-stage active-stage" data-stage="seed">
+                        <div class="stage-icon">🌱</div>
+                        <h3>Seed Stage</h3>
+                        <p>Seed funding, testing business ideas, prototyping</p>
+                        <div class="stage-details hidden">
+                            <ul>
+                                <li>Initial capital for MVP development</li>
+                                <li>Market validation</li>
+                                <li>Team building</li>
+                                <li>Typical funding: $50K - $2M</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="lifecycle-stage" data-stage="startup">
+                        <div class="stage-icon">🚀</div>
+                        <h3>Startup Stage</h3>
+                        <p>Series A funding, sales and operations begin</p>
+                        <div class="stage-details hidden">
+                            <ul>
+                                <li>Product-market fit achieved</li>
+                                <li>Revenue generation starts</li>
+                                <li>Scaling operations</li>
+                                <li>Typical funding: $2M - $15M</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="lifecycle-stage" data-stage="growth">
+                        <div class="stage-icon">📈</div>
+                        <h3>Growth Stage</h3>
+                        <p>Business expansion, Series B/C funding</p>
+                        <div class="stage-details hidden">
+                            <ul>
+                                <li>Market expansion</li>
+                                <li>International growth</li>
+                                <li>Product diversification</li>
+                                <li>Typical funding: $15M - $100M+</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="lifecycle-stage" data-stage="maturity">
+                        <div class="stage-icon">🎯</div>
+                        <h3>Maturity Stage</h3>
+                        <p>Buy-out opportunities, stable cash flows</p>
+                        <div class="stage-details hidden">
+                            <ul>
+                                <li>Predictable revenue streams</li>
+                                <li>Market leadership</li>
+                                <li>IPO readiness</li>
+                                <li>PE involvement increases</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="lifecycle-stage" data-stage="decline">
+                        <div class="stage-icon">⚠️</div>
+                        <h3>Decline/Exit</h3>
+                        <p>Distressed assets, strategic exits</p>
+                        <div class="stage-details hidden">
+                            <ul>
+                                <li>Market disruption</li>
+                                <li>Strategic acquisition</li>
+                                <li>Turnaround opportunities</li>
+                                <li>Asset optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Structure Section -->
+            <section id="structure" class="content-section">
+                <h2>Legal Structure</h2>
+                
+                <div class="structure-tabs">
+                    <button class="structure-tab active" data-country="us">United States</button>
+                    <button class="structure-tab" data-country="india">India</button>
+                </div>
+
+                <div class="structure-content">
+                    <div id="us-structure" class="structure-panel active">
+                        <div class="structure-grid">
+                            <div class="card">
+                                <div class="card__body">
+                                    <h3>Limited Partnership Structure</h3>
+                                    <p>US Venture Funds operate as limited partnerships between LPs and GPs</p>
+                                    
+                                    <div class="partner-types">
+                                        <div class="partner-type">
+                                            <h4>Limited Partners (LPs)</h4>
+                                            <ul>
+                                                <li>Provide capital to the fund</li>
+                                                <li>Passive investors</li>
+                                                <li>Include: Pension funds, Sovereign funds, FoF, Family offices, HNIs</li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <div class="partner-type">
+                                            <h4>General Partners (GPs)</h4>
+                                            <ul>
+                                                <li>Manage fund operations</li>
+                                                <li>Make investment decisions</li>
+                                                <li>Raise capital from LPs</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card__body">
+                                    <h3>Fund Organization</h3>
+                                    
+                                    <div class="team-structure">
+                                        <div class="team-item">
+                                            <strong>Investment Team</strong>
+                                            <p>Partners, principals, analysts conducting due diligence and deal sourcing</p>
+                                        </div>
+                                        
+                                        <div class="team-item">
+                                            <strong>Support Functions</strong>
+                                            <p>Finance, HR, Marketing, Legal professionals</p>
+                                        </div>
+                                        
+                                        <div class="team-item">
+                                            <strong>Portfolio Services</strong>
+                                            <p>Post-investment support for entrepreneurs</p>
+                                        </div>
+                                        
+                                        <div class="team-item">
+                                            <strong>Advisory Board</strong>
+                                            <p>Industry veterans providing strategic insights</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="india-structure" class="structure-panel">
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Alternative Investment Fund (AIF) Structure</h3>
+                                <p>Indian VCs operate as Category I AIFs, structured as trusts instead of partnerships</p>
+                                
+                                <div class="aif-categories">
+                                    <div class="aif-category">
+                                        <h4>AIF Category I</h4>
+                                        <p>Venture capital funds, infrastructure funds, SME funds - considered beneficial for economic development</p>
+                                    </div>
+                                    
+                                    <div class="aif-category">
+                                        <h4>AIF Category II</h4>
+                                        <p>Private equity funds, debt funds - don't fall under Category I or III</p>
+                                    </div>
+                                    
+                                    <div class="aif-category">
+                                        <h4>AIF Category III</h4>
+                                        <p>Hedge funds employing diverse or complex trading strategies</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Comparison Section -->
+            <section id="comparison" class="content-section">
+                <h2>VC vs PE Comparison</h2>
+                
+                <div class="comparison-table">
+                    <div class="comparison-header">
+                        <div class="comparison-category">Aspect</div>
+                        <div class="comparison-vc">Venture Capital</div>
+                        <div class="comparison-pe">Private Equity</div>
+                    </div>
+                    
+                    <div class="comparison-row">
+                        <div class="comparison-category">Investment Thesis</div>
+                        <div class="comparison-vc">Equity only, high uncertainty, new ideas and innovations</div>
+                        <div class="comparison-pe">Both equity and debt, predictable cash flows, larger investment size >$10M</div>
+                    </div>
+                    
+                    <div class="comparison-row">
+                        <div class="comparison-category">Company Stage</div>
+                        <div class="comparison-vc">Seed and early-stage startups</div>
+                        <div class="comparison-pe">Various stages, often mature companies</div>
+                    </div>
+                    
+                    <div class="comparison-row">
+                        <div class="comparison-category">Investment Size</div>
+                        <div class="comparison-vc">Lower amounts, more equity percentage</div>
+                        <div class="comparison-pe">Larger amounts, typically >$10M</div>
+                    </div>
+                    
+                    <div class="comparison-row">
+                        <div class="comparison-category">Risk Profile</div>
+                        <div class="comparison-vc">High risk, high potential returns</div>
+                        <div class="comparison-pe">Moderate risk, predictable returns</div>
+                    </div>
+                    
+                    <div class="comparison-row">
+                        <div class="comparison-category">Time Horizon</div>
+                        <div class="comparison-vc">7-10 years</div>
+                        <div class="comparison-pe">4-7 years</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ecosystem Section -->
+            <section id="ecosystem" class="content-section">
+                <h2>Global Startup Ecosystem</h2>
+                
+                <div class="ecosystem-stats">
+                    <div class="stat-card">
+                        <h3 id="unicorn-counter">1,523</h3>
+                        <p>Global Unicorns</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>758</h3>
+                        <p>US Unicorns</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>343</h3>
+                        <p>China Unicorns</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>64</h3>
+                        <p>India Unicorns</p>
+                    </div>
+                </div>
+
+                <div class="ecosystem-content">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Top 10 Startup Hubs 2025</h3>
+                            <div class="startup-rankings">
+                                <div class="ranking-item">
+                                    <span class="rank">1</span>
+                                    <span class="city">San Francisco, US</span>
+                                    <span class="growth">+19.9%</span>
+                                </div>
+                                <div class="ranking-item">
+                                    <span class="rank">2</span>
+                                    <span class="city">New York, US</span>
+                                    <span class="growth">+25.5%</span>
+                                </div>
+                                <div class="ranking-item">
+                                    <span class="rank">3</span>
+                                    <span class="city">London, UK</span>
+                                    <span class="growth">+29.8%</span>
+                                </div>
+                                <div class="ranking-item">
+                                    <span class="rank">4</span>
+                                    <span class="city">Los Angeles, US</span>
+                                    <span class="growth">+14.1%</span>
+                                </div>
+                                <div class="ranking-item">
+                                    <span class="rank">5</span>
+                                    <span class="city">Beijing, China</span>
+                                    <span class="growth">+25.2%</span>
+                                </div>
+                                <div class="ranking-item">
+                                    <span class="rank">6</span>
+                                    <span class="city">Boston, US</span>
+                                    <span class="growth">+17.1%</span>
+                                </div>
+                                <div class="ranking-item">
+                                    <span class="rank">7</span>
+                                    <span class="city">Shanghai, China</span>
+                                    <span class="growth">+38.4%</span>
+                                </div>
+                                <div class="ranking-item">
+                                    <span class="rank">8</span>
+                                    <span class="city">Paris, France</span>
+                                    <span class="growth">+34.6%</span>
+                                </div>
+                                <div class="ranking-item">
+                                    <span class="rank">9</span>
+                                    <span class="city">Tel Aviv, Israel</span>
+                                    <span class="growth">+24.0%</span>
+                                </div>
+                                <div class="ranking-item">
+                                    <span class="rank">10</span>
+                                    <span class="city">Bangalore, India</span>
+                                    <span class="growth">+13.8%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>India Startup Landscape</h3>
+                            <div class="india-stats">
+                                <div class="india-stat">
+                                    <span class="stat-number">159,157</span>
+                                    <span class="stat-label">Total Recognized Startups</span>
+                                </div>
+                                <div class="india-stat">
+                                    <span class="stat-number">75,935</span>
+                                    <span class="stat-label">Women-Led Startups</span>
+                                </div>
+                                <div class="india-stat">
+                                    <span class="stat-number">1.72M</span>
+                                    <span class="stat-label">Direct Jobs Created</span>
+                                </div>
+                                <div class="india-stat">
+                                    <span class="stat-number">240,000</span>
+                                    <span class="stat-label">Projected by 2030</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Asset Allocation Section -->
+            <section id="asset-allocation" class="content-section">
+                <h2>Asset Allocation by LP Types</h2>
+               
+                <div class="allocation-overview">
+                    <p>Different types of Limited Partners (LPs) have varying risk preferences and allocation strategies based on their investment mandates, regulatory requirements, and return objectives.</p>
+                </div>
+
+
+                <div class="lp-allocation-grid">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Pension Funds</h3>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="pensionChart"></canvas>
+                            </div>
+                            <div class="allocation-summary">
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Equity:</span>
+                                    <span class="allocation-value">52%</span>
+                                </div>
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Fixed Income:</span>
+                                    <span class="allocation-value">28%</span>
+                                </div>
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Alternatives:</span>
+                                    <span class="allocation-value">19%</span>
+                                </div>
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Cash:</span>
+                                    <span class="allocation-value">1%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>HNI (High Net Worth Individuals)</h3>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="hniChart"></canvas>
+                            </div>
+                            <div class="allocation-summary">
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Equity:</span>
+                                    <span class="allocation-value">35%</span>
+                                </div>
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Fixed Income:</span>
+                                    <span class="allocation-value">30%</span>
+                                </div>
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Alternatives:</span>
+                                    <span class="allocation-value">14%</span>
+                                </div>
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Cash:</span>
+                                    <span class="allocation-value">13%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Bank/Insurance</h3>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="bankChart"></canvas>
+                            </div>
+                            <div class="allocation-summary">
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Equity:</span>
+                                    <span class="allocation-value">20%</span>
+                                </div>
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Fixed Income:</span>
+                                    <span class="allocation-value">63%</span>
+                                </div>
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Alternatives:</span>
+                                    <span class="allocation-value">11%</span>
+                                </div>
+                                <div class="allocation-item">
+                                    <span class="allocation-label">Cash:</span>
+                                    <span class="allocation-value">6%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="allocation-comparison">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Comparative Analysis</h3>
+                            <div class="chart-container" style="position: relative; height: 400px;">
+                                <canvas id="comparisonChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Risk Preference Analysis</h3>
+                            <div class="risk-analysis">
+                                <div class="risk-profile">
+                                    <h4>Pension Funds</h4>
+                                    <p><strong>Risk Profile:</strong> Moderate to High</p>
+                                    <p>Long-term liability matching with higher equity allocation for growth. Significant alternatives exposure for diversification.</p>
+                                </div>
+                                <div class="risk-profile">
+                                    <h4>HNI</h4>
+                                    <p><strong>Risk Profile:</strong> Balanced</p>
+                                    <p>Diversified approach with higher cash allocation for liquidity needs and opportunities. Moderate alternatives exposure.</p>
+                                </div>
+                                <div class="risk-profile">
+                                    <h4>Bank/Insurance</h4>
+                                    <p><strong>Risk Profile:</strong> Conservative</p>
+                                    <p>Regulatory constraints drive high fixed income allocation. Lower equity and alternatives due to capital requirements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Metrics Section -->
+            <section id="metrics" class="content-section">
+                <h2>Financial Metrics & Fund Economics</h2>
+                
+                <div class="metrics-grid">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>2/20 Structure</h3>
+                            <br>
+                            <div class="fee-structure">
+                                <div class="fee-item">
+                                    <div class="fee-percentage">2%</div>
+                                    <div class="fee-description">
+                                        <strong>Annual Management Fee</strong>
+                                        <p>Covers salaries, research, legal, compliance, IT, and due diligence costs</p>
+                                    </div>
+                                </div>
+                                <div class="fee-item">
+                                    <div class="fee-percentage">20%</div>
+                                    <div class="fee-description">
+                                        <strong>Carried Interest</strong>
+                                        <p>GP keeps 20% of profits after LP capital is returned and hurdle rate is exceeded</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Key Performance Metrics</h3>
+                            <br>
+                            <div class="metrics-list">
+                                <div class="metric-item">
+                                    <strong>DPI (Distributions to Paid-in Capital)</strong>
+                                    <p>Measures money returned to LPs vs invested capital</p>
+                                </div>
+                                <div class="metric-item">
+                                    <strong>IRR (Internal Rate of Return)</strong>
+                                    <p>Typical startup IRR: ~30%</p>
+                                </div>
+                                <div class="metric-item">
+                                    <strong>NAV (Net Asset Value)</strong>
+                                    <p>Current value of fund's investments</p>
+                                </div>
+                                <div class="metric-item">
+                                    <strong>Holding Period</strong>
+                                    <p>Average: 8 years</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>J-Curve Concept</h3>
+                            <br>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="jCurveChart"></canvas>
+                            </div>
+                            <p>Venture funds typically show negative returns early due to management fees, with gains materializing in later years.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Internal Rate of Return</h3>
+                            <h3>(IRR)</h3>
+                            <br>
+                            <p><span class="definition-label">Definition:</span> The discount rate at which the Net Present Value (NPV) of all cash flows equals zero.</p>
+                            <p><span class="definition-label">Use Case:</span> To evaluate the profitability of potential investments. It provides a single percentage rate that can be compared across different investments.</p>
+                            <p><span class="definition-label">Formula:</span> Put NPV = 0 and solve for discount rate.
+                            <p><span class="definition-label">Pros:</span> Accounts for the time value of money, considers all cash flows.</p>
+                            <p><span class="definition-label">Cons:</span> Assumes intermediate cash flows are reinvested at the IRR itself, which may not be realistic.</p>
+                        </div>
+                    </div>
+
+                     <div class="card">
+                        <div class="card__body">
+                            <h3>Extended Internal Rate of Return (XIRR)</h3>
+                            <br>
+                            <p><span class="definition-label">Definition:</span> A more flexible version of IRR that allows for cash flows to occur at irregular intervals, rather than at fixed periodic intervals.</p>
+                            <p><span class="definition-label">Use Case:</span> Ideal for investments like venture capital and private equity where capital calls and distributions are not strictly annual, but occur on specific dates.</p>
+                            <p><span class="definition-label">Pros:</span> Accurately reflects irregular cash flow timings. More realistic for many real-world investments.</p>
+                            <p><span class="definition-label">Cons:</span> Requires specific dates for each cash flow.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Modified Internal Rate of Return (MIRR)</h3>
+                            <br>
+                            <p><span class="definition-label">Definition:</span> A modification of the IRR which uses different rates for financing and reinvesting cash flows.</p>
+                            <p><span class="definition-label">Use Case:</span> Provides a more realistic return measure by allowing the investor to specify a separate reinvestment rate, often the cost of capital.</p>
+                            <p><span class="definition-label">Formula:</span> MIRR = nth root of (FV of +ve CF / PV of -ve CF) - 1.</p>
+                            <p><span class="definition-label">Pros:</span> Overcomes the reinvestment rate assumption of IRR, provides a single rate.</p>
+                            <p><span class="definition-label">Cons:</span> Requires the user to define a reinvestment rate, which can still be subjective.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Net Asset Value (NAV)</h3>
+                            <br>
+                            <p><span class="definition-label">Definition:</span> The total value of a fund's assets minus its liabilities, typically expressed on a per-share or per-unit basis.</p>
+                            <p><span class="definition-label">Use Case:</span> Fundamental for valuing investment funds (like mutual funds, ETFs, and private equity funds). It's used to calculate the value of an investor's stake in the fund.</p>
+                            <p><span class="definition-label">Formula:</span> NAV = (Total Assets - Total Liabilities) / No. of Outstanding Shares</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Net Present Value (NPV)</h3>
+                            <br>
+                            <p><span class="definition-label">Definition:</span> The difference between the present value of cash inflows and the present value of cash outflows over a period of time.</p>
+                            <p><span class="definition-label">Use Case:</span> A primary metric for decision-making in financial analysis. If NPV is positive, the project is expected to be profitable; if negative, it's not. If zero, it breaks even.</p>
+                            <p><span class="definition-label">Formula:</span> NPV = E(CF / (1+r)^t) - Initial Investment.</p>
+                        </div>
+                    </div>
+
+                    
+                    
+
+                    
+                    <!-- <div class="card">
+                        <div class="card__body">
+                            <h3>LP Asset Allocation</h3>
+                            <div class="chart-container" style="position: relative; height: 300px;">
+                                <canvas id="allocationChart"></canvas>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+
+            <!-- Deals Section -->
+            <section id="deals" class="content-section">
+                <h2>Deal Lifecycle & Process</h2>
+                
+                <div class="deal-flow">
+                    <div class="deal-stage">
+                        <div class="stage-number">1</div>
+                        <h3>Deal Pipeline</h3>
+                        <p>Internal deal team scouts for investment opportunities</p>
+                    </div>
+                    <div class="deal-arrow">→</div>
+                    
+                    <div class="deal-stage">
+                        <div class="stage-number">2</div>
+                        <h3>Deal Screening</h3>
+                        <p>Investment case prepared for investment committee<br><span class="acceptance-rate">30% acceptance rate</span></p>
+                    </div>
+                    <div class="deal-arrow">→</div>
+                    
+                    <div class="deal-stage">
+                        <div class="stage-number">3</div>
+                        <h3>Due Diligence</h3>
+                        <p>Comprehensive analysis of approved deals</p>
+                    </div>
+                    <div class="deal-arrow">→</div>
+                    
+                    <div class="deal-stage">
+                        <div class="stage-number">4</div>
+                        <h3>Deal Structuring</h3>
+                        <p>Term sheet negotiation and finalization</p>
+                    </div>
+                    <div class="deal-arrow">→</div>
+                    
+                    <div class="deal-stage">
+                        <div class="stage-number">5</div>
+                        <h3>Portfolio Monitoring</h3>
+                        <p>6-7 years of ongoing support and tracking</p>
+                    </div>
+                    <div class="deal-arrow">→</div>
+                    
+                    <div class="deal-stage">
+                        <div class="stage-number">6</div>
+                        <h3>Exit</h3>
+                        <p>IPO, Merger, or Buyout</p>
+                    </div>
+                </div>
+
+                <div class="due-diligence-grid">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Due Diligence Types</h3>
+                            <br>
+                            <div class="dd-types-grid">
+                                <div class="dd-type">
+                                    <strong>Management DD</strong>
+                                    <p>Quality of founders and management team</p>
+                                </div>
+                                <div class="dd-type">
+                                    <strong>Financial DD</strong>
+                                    <p>Book analysis and key valuation metrics</p>
+                                </div>
+                                <div class="dd-type">
+                                    <strong>Legal DD</strong>
+                                    <p>Legal structure and compliance review</p>
+                                </div>
+                                <div class="dd-type">
+                                    <strong>Commercial DD</strong>
+                                    <p>Understanding core problem being solved</p>
+                                </div>
+                                <div class="dd-type">
+                                    <strong>Technology DD</strong>
+                                    <p>Technical feasibility assessment</p>
+                                </div>
+                                <div class="dd-type">
+                                    <strong>Tax DD</strong>
+                                    <p>Tax implications and optimization</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Term Sheet Elements</h3>
+                            <br>
+                            <div class="term-sheet-items">
+                                <div class="term-item">Investment Strategy</div>
+                                <div class="term-item">Valuation & Equity</div>
+                                <div class="term-item">Carried Interest</div>
+                                <div class="term-item">Fund Duration</div>
+                                <div class="term-item">Management Fees</div>
+                                <div class="term-item">Key-man Clauses</div>
+                                <div class="term-item">Windup Clauses</div>
+                                <div class="term-item">Liquidation Preferences</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="new-cards-container">
+
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Preference Shares (Preferred Stock)</h3>
+                                <br>
+                                <p><span class="definition-label">Definition:</span> A class of ownership in a corporation that has a higher claim on assets and earnings than common stock. They typically have fixed dividends, but usually do not carry voting rights.</p>
+                                <p><span class="definition-label">Use Case:</span> Common in venture capital and private equity deals as they offer downside protection (liquidation preference) and a fixed return for investors.</p>
+                                <p><span class="definition-label">Pros:</span> Priority in dividend payments and liquidation, fixed income stream, less volatile than common shares.</p>
+                                <p><span class="definition-label">Cons:</span> No voting rights, potential for lower capital appreciation compared to common stock if company grows significantly.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Convertible Notes</h3>
+                                <br>
+                                <p><span class="definition-label">Definition:</span> A type of short-term debt that converts into equity at a later date, typically upon a future equity financing round. They are often used by early-stage startups to defer valuation discussions.</p>
+                                <p><span class="definition-label">Use Case:</span> Popular in seed and early-stage fundraising for startups. They allow a company to raise capital quickly without setting a valuation, converting into equity when a larger, priced round occurs.</p>
+                                <p><span class="definition-label">Pros:</span> Simpler and quicker to execute than equity rounds, delays valuation discussion.</p>
+                                <p><span class="definition-label">Cons:</span> Can lead to complex cap table scenarios if not structured carefully, potential for investor dilution if future valuation is lower than expected.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card__body">
+                                <h3>Warrants</h3>
+                                <br>
+                                <p><span class="definition-label">Definition:</span> A long-term option to buy a company's stock at a predetermined price and date. They are often issued by companies as a "sweetener" for investors in debt or equity offerings.</p>
+                                <p><span class="definition-label">Use Case:</span> Commonly attached to private debt or preferred stock offerings in VC/PE deals to provide additional upside for investors. They give investors the right to purchase common shares at a set price.</p>
+                                <p><span class="definition-label">Pros:</span> Provides additional upside potential for investors, can make debt or preferred stock more attractive, less dilutive initially than direct equity.</p>
+                                <p><span class="definition-label">Cons:</span> Future dilution for existing shareholders if exercised, can complicate capital structure, value depends on future stock price performance.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; Created By Saket Kumar Using Perplexity</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
